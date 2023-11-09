@@ -6,7 +6,7 @@ function App() {
     <div className="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
       <NavBar />
       <ItemListContainer
-        greeting={"Bievenido a RE-GAMES nuestra tienda de videojuegos"}
+        greeting={"Bievenido a Residence nuestra tienda de videojuegos"}
       />
     </div>
   );

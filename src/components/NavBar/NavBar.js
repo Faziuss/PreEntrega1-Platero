@@ -1,21 +1,21 @@
 import CartWidget from "../CartWidget/CartWidget";
+import Logo from "../Logo";
 
 const NavBar = () => {
   return (
     <header className="bg-white">
       <nav className="flex flex-row justify-between items-center w-[92%] mx-auto p-2">
-        <div>
-          <h3 className="">RE-GAMES</h3>
-        </div>
-        <ul className="flex items-center gap-[4vw]">
+          <Logo/>
+          {/* <h3 className="text-xl">RE-GAMES</h3> */}
+        <ul className="flex items-center gap-4">
           <li>
-            <a className="hover:text-gray-500" href="#">
+            <a className="hover:text-gray-500 font-bold" href="#">
               Juegos Digitales
             </a>
           </li>
           <li>
-            <a className="hover:text-gray-500" href="#">
-              Juegos FIsicos
+            <a className="hover:text-gray-500 font-bold" href="#">
+              Juegos Físicos
             </a>
           </li>
         </ul>
