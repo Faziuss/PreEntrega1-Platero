@@ -5,7 +5,7 @@ function App(){
     return(
         <div>
             <NavBar/>
-            <ItemListContainer greeting={"Hola"}/>
+            <ItemListContainer greeting={"Bievenido a RE-GAMES nuestra tienda de videojuegos"}/>
         </div>
     )
 }
