@@ -1,12 +1,11 @@
-import cart from './assets/carrito-de-compras.png'
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const CartWidget = () => {
-    return ( 
-        <div>
-            <img src={cart} alt='cart-widget'/>
-            0
-        </div>
-    )
-}
+  return (
+    <div className="flex gap-2 items-center">
+      <AiOutlineShoppingCart size={"1.5rem"} />0
+    </div>
+  );
+};
 
-export default CartWidget
+export default CartWidget;
