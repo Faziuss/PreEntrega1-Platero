@@ -15,7 +15,7 @@ const NavBar = () => {
           </li>
           <li>
             <a className="hover:text-gray-500 font-bold" href="#">
-              Juegos Físicos
+              Juegos Fisicos
             </a>
           </li>
         </ul>
