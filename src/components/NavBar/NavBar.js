@@ -10,12 +10,12 @@ const NavBar = () => {
         <ul className="flex items-center gap-4">
           <li>
             <a className="hover:text-gray-500 font-bold" href="#">
-              Juegos Digitales
+              Productos
             </a>
           </li>
           <li>
             <a className="hover:text-gray-500 font-bold" href="#">
-              Juegos Fisicos
+              Contacto
             </a>
           </li>
         </ul>
