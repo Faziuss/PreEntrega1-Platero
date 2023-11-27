@@ -1,22 +1,24 @@
-const itemDetail = ({id, name, img, category, description, price}) => {
-    return(
-        <article>
+const itemDetail = ({ id, name, img, platform, description, price }) => {
+  return (
+    <article className="flex flex-col items-center max-w-[500px] pt-8">
       <header>
-        <h2 className="font-medium text-center">{name}</h2>
+        <h2 className="text-2xl font-bold text-center pb-4">{name}</h2>
       </header>
       <picture>
         <img
           src={img}
           alt={name}
-          className="w-[300px] h-[350px] object-cover"
+          className="w-[500px] h-[500px] object-cover"
         />
       </picture>
-      <section>
-        <p>Precio: ${price}</p>
+      <section className="p-4">
+        <p className="mb-1">Plataforma: {platform}</p>
+        <p className="mb-1">Precio: ${price}</p>
+        <p className="mb-1">Descripción: {description}</p>
       </section>
-      <footer>
-        <Link to={`/item/${id}`}>Mas Info</Link>
-      </footer>
+      <footer></footer>
     </article>
-    )
-}
+  );
+};
+
+export default itemDetail;
