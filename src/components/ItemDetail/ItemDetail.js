@@ -1,4 +1,14 @@
-const itemDetail = ({ id, name, img, platform, description, price }) => {
+import { useState } from "react";
+import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
+
+const ItemDetail = ({ id, name, img, platform, description, price, stock }) => {
+  const [quantityAdded, setQuantityAdded] = useState(0)
+
+  const handleOnAdd = (quantity) => {
+    setQuantityAdded(quantity)
+  }
+
   return (
     <article className="flex flex-col items-center max-w-[500px] pt-8">
       <header>
@@ -16,9 +26,17 @@ const itemDetail = ({ id, name, img, platform, description, price }) => {
         <p className="mb-1">Precio: ${price}</p>
         <p className="mb-1">Descripción: {description}</p>
       </section>
-      <footer></footer>
+      <footer>
+        {
+          quantityAdded > 0 ? (
+            <Link to='/cart'>Terminar Compra</Link>
+          ) : (
+            <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
+          )
+        }
+      </footer>
     </article>
   );
 };
 
-export default itemDetail;
+export default ItemDetail;
