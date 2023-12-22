@@ -24,14 +24,7 @@ const NavBar = () => {
               PC
             </Link>
           </li>
-          <li>
-            <Link
-              to="/category/contacto"
-              className="hover:text-[#ff2e2e] font-bold"
-            >
-              Contacto
-            </Link>
-          </li>
+         
         </ul>
         <div className="flex gap-4">
           <CartWidget />

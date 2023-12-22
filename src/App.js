@@ -9,6 +9,9 @@ import { ToastContainer } from "react-toastify";
 import { CartProvider } from "./context/CartContext";
 
 function App() {
+
+  console.log(process.env.REACT_APP_apiKey);
+
   return (
     <div>
       <BrowserRouter>
