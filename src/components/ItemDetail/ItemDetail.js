@@ -20,7 +20,7 @@ const ItemDetail = ({ id, name, img, platform, description, price, stock }) => {
   }
 
   return (
-    <article className="flex flex-col items-center max-w-[500px] pt-8">
+    <article className="flex flex-col items-center max-w-[500px] py-6 shadow-custom px-2 rounded">
       <header>
         <h2 className="text-2xl font-bold text-center pb-4">{name}</h2>
       </header>
@@ -34,7 +34,7 @@ const ItemDetail = ({ id, name, img, platform, description, price, stock }) => {
       <section className="p-4">
         <p className="mb-1">Plataforma: {platform}</p>
         <p className="mb-1">Precio: ${price}</p>
-        <p className="mb-1">Descripción: {description}</p>
+        <p className="mb-1 font-[100]">Descripción: {description }</p>
       </section>
       <footer>
         {

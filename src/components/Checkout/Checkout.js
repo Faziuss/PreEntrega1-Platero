@@ -73,7 +73,7 @@ const Checkout = () => {
     }
 
     if (orderId) {
-        return <h1>El id de su orden es: {orderId}</h1>
+        return <h1>El ID de su orden es: {orderId}</h1>
     }
 
     return (

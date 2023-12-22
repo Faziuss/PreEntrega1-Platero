@@ -7,6 +7,7 @@
 @layer base {
   html {
     font-family: "Inter", sans-serif;
+    scrollbar-gutter: stable;
   }
   body {
     min-height: 100vh;

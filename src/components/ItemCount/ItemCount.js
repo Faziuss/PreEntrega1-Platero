@@ -18,9 +18,9 @@ const decrement = () => {
 return(
     <div className="flex flex-col gap-5">
         <div className="flex text-2xl text-center">
-            <button onClick={decrement} className="border-[1px] p-2 w-full rounded transition duration-300 hover:bg-[#313131]">-</button>
-            <h4 className="border-[1px] p-2 w-full ">{quantity} </h4>
-            <button onClick={increment} className="border-[1px] p-2 w-full rounded transition duration-300 hover:bg-[#313131]">+</button>
+            <button onClick={decrement} className="border-[1px] p-1 w-full rounded transition duration-300 hover:bg-[#313131]">-</button>
+            <h4 className="border-[1px] p-1 w-full text-[18px] font-bold">{quantity} </h4>
+            <button onClick={increment} className="border-[1px] p-1 w-full rounded transition duration-300 hover:bg-[#313131]">+</button>
         </div>
         <div className="">
             <button onClick={() => onAdd(quantity)} disabled={!stock} className="border p-2 px-6 rounded transition duration-300 hover:bg-[#313131]">

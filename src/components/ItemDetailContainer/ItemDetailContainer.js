@@ -40,9 +40,9 @@ const ItemDetailContainer = () => {
     }, [itemId])
 
     return(
-        <div className="flex justify-center">
-          {/*   {loading? <SvgLoader/> : null} */}
-            <ItemDetail {...product}/>
+        <div className="flex justify-center py-2">
+            {loading? <SvgLoader/> : null}
+            {!loading && product? <ItemDetail {...product}/> : null}
         </div>
     )
 }
