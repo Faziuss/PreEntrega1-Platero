@@ -15,7 +15,7 @@
    /*  background-image: url(assets/graffiti_by_neuroticcell_dkrd91.png);
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: rgb(14, 14, 14);
+    background-color: #0e0e0e;
  /*    background: rgb(251, 194, 235);
     background: linear-gradient(
       0deg,
@@ -23,5 +23,11 @@
       rgba(166, 193, 238, 1) 100%
     );
     background-repeat: no-repeat; */
+    input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
   }
 }

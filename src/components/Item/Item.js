@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({ id, name, img, price }) => {
   return (
-    <article>
+    <article className="flex flex-col items-center shadow-custom rounded gap-2 p-2">
       <header>
         <h2 className="font-medium text-center">{name}</h2>
       </header>

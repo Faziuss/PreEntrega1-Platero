@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { BsTrash } from "react-icons/bs";
-import {toast, ToastContainer} from "react-toastify"
+import {toast} from "react-toastify"
 
 
 const CartItem = ({ id, name, price, img, quantity }) => {
@@ -9,9 +9,8 @@ const CartItem = ({ id, name, price, img, quantity }) => {
 
   const notify = () => {
     removeItem(id)
- toast.success(`Removiste ${name} de tu carrito`, {position: toast.POSITION.TOP_CENTER}) 
+ toast.success(`Removiste '${name}' de tu carrito`)
   } 
-
 
   return (
     <div className="flex gap-10 items-center px-2 py-1 bg-[#131313] rounded shadow-custom max-w-[70rem] w-full " >

@@ -10,7 +10,7 @@ import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <div className="lol">
+    <div>
       <BrowserRouter>
         <CartProvider>
           <NavBar />
@@ -34,7 +34,17 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h1>ERROR 404 </h1>} />
           </Routes>
-          <ToastContainer />
+          <ToastContainer 
+          position="top-center"
+          autoClose={1500}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable
+          pauseOnHover
+          theme="dark"/>
         </CartProvider>
       </BrowserRouter>
     </div>

@@ -38,8 +38,8 @@ const ItemListContainer = ({greeting}) => {
     }, [categoryId])
 
     return ( 
-        <div>
-            <h1 className="text-center p-4 font-bold text-2xl">{greeting}</h1>
+        <div className='m-4'>
+            <h1 className="text-center mb-4 font-bold text-2xl">{greeting}</h1>
             {loading? <SvgLoader className="svg"/> : null}
             <ItemList products={products}/>
         </div>

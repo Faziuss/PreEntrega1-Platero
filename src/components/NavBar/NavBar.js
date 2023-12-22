@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <header className="bg-[#18181c]">
-      <nav className="flex flex-row justify-between items-center w-[92%] mx-auto p-2">
+      <nav className="flex flex-row justify-between items-center w-full mx-auto p-2">
         <Link to="/">
           <Logo />
         </Link>

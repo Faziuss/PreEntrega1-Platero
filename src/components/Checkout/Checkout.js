@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext"
 import { Timestamp, collection, documentId, query, where, getDocs, addDoc, writeBatch } from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
+import SvgLoader from "../../SvgLoader"
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false)
@@ -69,16 +70,16 @@ const Checkout = () => {
     }
 
     if (loading) {
-        return <h1>Se esta genereando su orden...</h1>
+        return <SvgLoader/>
     }
 
     if (orderId) {
-        return <h1>El ID de su orden es: {orderId}</h1>
+        return <h1 className="text-xl text-center mt-12 font-bold">El ID de su orden es: {orderId}</h1>
     }
 
     return (
-        <div>
-            <h1>Checkout</h1>
+        <div className="flex flex-col gap-4 mt-4 items-center">
+            <h1 className="text-center text-xl font-bold">Checkout</h1>
             <CheckoutForm onConfirm={createOrder}/>
         </div>
     )

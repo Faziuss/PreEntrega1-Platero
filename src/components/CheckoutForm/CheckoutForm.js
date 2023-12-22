@@ -17,30 +17,33 @@ const CheckoutForm = ({onConfirm}) => {
 
     return (
         <div>
-            <form onSubmit={handleConfirm}>
-                <label>
+            <form onSubmit={handleConfirm} className="flex flex-col shadow-custom gap-4 w-full p-8 bg-[#222222]">
+                <label >
                     Nombre
-                    <input
+                    <input className="w-full bg-[#00000000] border border-[#ffffff73] rounded p-1"
                     type= "text"
                     value={name}
+                    required
                     onChange={({target})=> setName(target.value)}/>
                 </label>
                 <label>
                     Telefono
-                    <input
-                    type= "text"
+                    <input className="w-full bg-[#00000000] border border-[#ffffff73] rounded p-1"
+                    type= "number"
                     value={phone}
+                    required
                     onChange={({target})=> setPhone(target.value)}/>
                 </label>
-                <label>
+                <label >
                     Email
-                    <input
-                    type= "text"
+                    <input className="w-full bg-[#00000000] border border-[#ffffff73] rounded p-1"
+                    type= "email"
                     value={email}
+                    required
                     onChange={({target})=> setEmail(target.value)}/>
                 </label>
-                <div>
-                    <button type="submit">Crear Orden</button>
+                <div className="mt-4 flex justify-center">
+                    <button type="submit" className="border p-2 px-6 rounded transition duration-300 hover:bg-[#313131] ">Crear Orden</button>
                 </div>
 
             </form>
