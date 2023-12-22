@@ -1,6 +1,5 @@
 import CartWidget from "../CartWidget/CartWidget";
 import Logo from "../Logo";
-import ProfileWidget from "../Profile/ProfileWidget";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -28,7 +27,6 @@ const NavBar = () => {
         </ul>
         <div className="flex gap-4">
           <CartWidget />
-          <ProfileWidget />
         </div>
       </nav>
     </header>
