@@ -4,12 +4,13 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Checkout from "./components/Checkout/Checkout";
+import { ToastContainer } from "react-toastify";
 
 import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <div>
+    <div className="lol">
       <BrowserRouter>
         <CartProvider>
           <NavBar />
@@ -33,6 +34,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h1>ERROR 404 </h1>} />
           </Routes>
+          <ToastContainer />
         </CartProvider>
       </BrowserRouter>
     </div>
