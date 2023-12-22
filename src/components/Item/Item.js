@@ -13,10 +13,10 @@ const Item = ({ id, name, img, price }) => {
           className="w-[300px] h-[350px] object-cover"
         />
       </picture>
-      <section>
+      <section className="p-2">
         <p>Precio: ${price}</p>
       </section>
-      <footer>
+      <footer className="text-center ml-[30%] p-2 w-[40%] bg-[#cecef1] border ">
         <Link to={`/item/${id}`}>Mas Info</Link>
       </footer>
     </article>

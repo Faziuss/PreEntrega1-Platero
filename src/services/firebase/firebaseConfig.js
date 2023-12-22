@@ -3,15 +3,16 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB9PCFCVoHBuRz3ios3ZwFxzoSez1iOIcU",
-  authDomain: "e-commerce-residence.firebaseapp.com",
-  projectId: "e-commerce-residence",
-  storageBucket: "e-commerce-residence.appspot.com",
-  messagingSenderId: "670093206830",
-  appId: "1:670093206830:web:9c5695e395e34e593286bf"
+  apiKey: "AIzaSyC05n279Aep64jxafMY2pAlBKFIvRYpufM",
+  authDomain: "residence-3e105.firebaseapp.com",
+  projectId: "residence-3e105",
+  storageBucket: "residence-3e105.appspot.com",
+  messagingSenderId: "377384095002",
+  appId: "1:377384095002:web:bb3257c4eb41a7959770a3",
+  measurementId: "G-JDNHZTC3ZY"
 };
 
 
 const app = initializeApp(firebaseConfig);
 
-export default db = getFirestore(app)
+export const db = getFirestore(app)

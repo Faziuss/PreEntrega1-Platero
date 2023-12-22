@@ -17,13 +17,13 @@ const decrement = () => {
 
 return(
     <div>
-        <div className="flex gap-8 justify-center items-center text-center border-[1px] p-2 text-2xl">
-            <button onClick={decrement} className="">-</button>
-            <h4>{quantity}</h4>
-            <button onClick={increment}>+</button>
+        <div className="flex gap-8 justify-center items-center text-center  text-2xl">
+            <button onClick={decrement} className="border-[1px] p-2">-</button>
+            <h4 className="border-[1px] p-2">{quantity} </h4>
+            <button onClick={increment} className="border-[1px] p-2">+</button>
         </div>
-        <div className="p-4 border-[1px]">
-            <button onClick={() => onAdd(quantity)} disabled={!stock} >
+        <div className="">
+            <button onClick={() => onAdd(quantity)} disabled={!stock} className="p-2 border-[1px]">
                 Agregar al Carrito
             </button>
         </div>
