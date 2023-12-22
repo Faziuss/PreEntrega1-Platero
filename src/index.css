@@ -10,12 +10,17 @@
   }
   body {
     min-height: 100vh;
-    background: rgb(251, 194, 235);
+    color: white;
+   /*  background-image: url(assets/graffiti_by_neuroticcell_dkrd91.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(14, 14, 14);
+ /*    background: rgb(251, 194, 235);
     background: linear-gradient(
       0deg,
       rgba(251, 194, 235, 1) 0%,
       rgba(166, 193, 238, 1) 100%
     );
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 }

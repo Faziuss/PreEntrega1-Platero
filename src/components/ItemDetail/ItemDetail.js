@@ -39,7 +39,7 @@ const ItemDetail = ({ id, name, img, platform, description, price, stock }) => {
       <footer>
         {
           quantityAdded > 0 ? (
-            <Link to='/cart' className="border-[1px] p-2">Terminar Compra</Link>
+            <Link to='/cart' className="border p-2 px-6 rounded transition duration-300 hover:bg-[#313131]">Terminar Compra</Link>
           ) : (
             <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
           )

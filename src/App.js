@@ -11,17 +11,29 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <CartProvider>
-      <NavBar />
-      <Routes>
-        <Route path='/' element={<ItemListContainer greeting={"Bievenido a Residence nuestra tienda de videojuegos"} />} />
-        <Route path='/category/:categoryId' element={<ItemListContainer/>} />
-        <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
-        <Route path="/cart" element={<Cart/>} /> 
-        <Route path="/checkout" element={<Checkout/>}/>
-        <Route path='*' element={<h1>ERROR 404 </h1>} />
-      </Routes> 
-      </CartProvider>
+        <CartProvider>
+          <NavBar />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <ItemListContainer
+                  greeting={
+                    "Bienvenido a Residence nuestra tienda de videojuegos"
+                  }
+                />
+              }
+            />
+            <Route
+              path="/category/:categoryId"
+              element={<ItemListContainer />}
+            />
+            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="*" element={<h1>ERROR 404 </h1>} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </div>
   );

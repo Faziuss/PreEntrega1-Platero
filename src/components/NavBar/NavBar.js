@@ -1,33 +1,41 @@
 import CartWidget from "../CartWidget/CartWidget";
 import Logo from "../Logo";
-import Profile from "../Profile/Profile";
+import ProfileWidget from "../Profile/ProfileWidget";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <header className="bg-white">
+    <header className="bg-[#18181c]">
       <nav className="flex flex-row justify-between items-center w-[92%] mx-auto p-2">
-        <Link to="/"><Logo/></Link>
+        <Link to="/">
+          <Logo />
+        </Link>
         <ul className="flex items-center gap-4">
           <li>
-            <Link to="/category/consola" className="hover:text-gray-500 font-bold">
+            <Link
+              to="/category/consola"
+              className="hover:text-[#ff2e2e] font-bold"
+            >
               Consola
             </Link>
           </li>
           <li>
-            <Link to="/category/pc" className="hover:text-gray-500 font-bold">
+            <Link to="/category/pc" className="hover:text-[#ff2e2e] font-bold">
               PC
             </Link>
           </li>
           <li>
-            <Link to="/category/contacto" className="hover:text-gray-500 font-bold">
+            <Link
+              to="/category/contacto"
+              className="hover:text-[#ff2e2e] font-bold"
+            >
               Contacto
             </Link>
           </li>
         </ul>
         <div className="flex gap-4">
           <CartWidget />
-          <Profile/>
+          <ProfileWidget />
         </div>
       </nav>
     </header>

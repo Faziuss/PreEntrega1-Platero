@@ -40,6 +40,7 @@ const ItemDetailContainer = () => {
 
     return(
         <div className="flex justify-center">
+            {loading? <h2>Loading...</h2> : null}
             <ItemDetail {...product}/>
         </div>
     )

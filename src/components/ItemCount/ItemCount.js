@@ -16,14 +16,14 @@ const decrement = () => {
 }
 
 return(
-    <div>
-        <div className="flex gap-8 justify-center items-center text-center  text-2xl">
-            <button onClick={decrement} className="border-[1px] p-2">-</button>
-            <h4 className="border-[1px] p-2">{quantity} </h4>
-            <button onClick={increment} className="border-[1px] p-2">+</button>
+    <div className="flex flex-col gap-5">
+        <div className="flex text-2xl text-center">
+            <button onClick={decrement} className="border-[1px] p-2 w-full rounded transition duration-300 hover:bg-[#313131]">-</button>
+            <h4 className="border-[1px] p-2 w-full ">{quantity} </h4>
+            <button onClick={increment} className="border-[1px] p-2 w-full rounded transition duration-300 hover:bg-[#313131]">+</button>
         </div>
         <div className="">
-            <button onClick={() => onAdd(quantity)} disabled={!stock} className="p-2 border-[1px]">
+            <button onClick={() => onAdd(quantity)} disabled={!stock} className="border p-2 px-6 rounded transition duration-300 hover:bg-[#313131]">
                 Agregar al Carrito
             </button>
         </div>

@@ -11,7 +11,7 @@ const CartWidget = () => {
     <Link to="/cart" className="flex gap-2">
       <AiOutlineShoppingCart
         size={"1.7rem"}
-        className="transition ease-in-out duration-200 text-black hover:text-teal-600"
+        className="transition ease-in-out duration-200 text-white hover:text-[#ff2e2e]"
       />
       <h2 className="font-bold">{totalQuantity}</h2>
     </Link>
