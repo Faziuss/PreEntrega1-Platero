@@ -4,6 +4,7 @@ const CheckoutForm = ({onConfirm}) => {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
+    const [email2nd, setEmail2nd] = useState('')
 
     const handleConfirm = (event) => {
         event.preventDefault()
@@ -46,9 +47,9 @@ const CheckoutForm = ({onConfirm}) => {
                     Repetir Email
                     <input className="w-full bg-[#00000000] border border-[#ffffff73] rounded p-1"
                     type= "email"
-                    value={email}
+                    value={email2nd}
                     required
-                    onChange={({target})=> setEmail(target.value)}/>
+                    onChange={({target})=> setEmail2nd(target.value)}/>
                 </label>
                 <div className="mt-4 flex justify-center">
                     <button type="submit" className="border p-2 px-6 rounded transition duration-300 hover:bg-[#313131] ">Crear Orden</button>
