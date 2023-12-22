@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
+import SvgLoader from "../../SvgLoader";
 
 
 const ItemDetailContainer = () => {
@@ -40,7 +41,7 @@ const ItemDetailContainer = () => {
 
     return(
         <div className="flex justify-center">
-            {loading? <h2>Loading...</h2> : null}
+          {/*   {loading? <SvgLoader/> : null} */}
             <ItemDetail {...product}/>
         </div>
     )

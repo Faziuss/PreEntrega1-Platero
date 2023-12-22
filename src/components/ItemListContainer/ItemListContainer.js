@@ -4,6 +4,7 @@ import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import { db } from "../../services/firebase/firebaseConfig"
+import SvgLoader from '../../SvgLoader'
 
 
 const ItemListContainer = ({greeting}) => {
@@ -39,9 +40,8 @@ const ItemListContainer = ({greeting}) => {
     return ( 
         <div>
             <h1 className="text-center p-4 font-bold text-2xl">{greeting}</h1>
-            {loading? <h2>Loading...</h2> : null}
+            {loading? <SvgLoader className="svg"/> : null}
             <ItemList products={products}/>
-
         </div>
     )
 }
