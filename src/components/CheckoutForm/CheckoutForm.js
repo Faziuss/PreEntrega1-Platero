@@ -42,6 +42,14 @@ const CheckoutForm = ({onConfirm}) => {
                     required
                     onChange={({target})=> setEmail(target.value)}/>
                 </label>
+                <label >
+                    Repetir Email
+                    <input className="w-full bg-[#00000000] border border-[#ffffff73] rounded p-1"
+                    type= "email"
+                    value={email}
+                    required
+                    onChange={({target})=> setEmail(target.value)}/>
+                </label>
                 <div className="mt-4 flex justify-center">
                     <button type="submit" className="border p-2 px-6 rounded transition duration-300 hover:bg-[#313131] ">Crear Orden</button>
                 </div>
